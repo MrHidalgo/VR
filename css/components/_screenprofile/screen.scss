@@ -60,7 +60,8 @@
 
     .row{
       .top-block{
-        background-color: $c_blue;
+        background-color: rgba($c_blue, .8);
+        box-shadow: 0 .5px 1px rgba(255,255,255,0.5);
 
         >p{
           font: 2.4em 'Muse_1';
@@ -88,7 +89,8 @@
         width: $w_all;
         padding: 1% 0 2%;
         bottom: 0;
-        background-color: $c_blue;
+        background-color: rgba($c_blue, .8);
+        box-shadow: 0 -0.6px 1px rgba(255,255,255,0.6);
 
         >p:first-child{
           color: $c_white;
@@ -99,7 +101,7 @@
         .discription{
           >p{
             color: $c_textblue;
-            font: 2em 'Muse_0';
+            font: 1.9em 'Muse_0';
           }
         }// /-discription
       }// /-bottom-block

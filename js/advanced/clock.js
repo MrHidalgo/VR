@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     var newDate = new Date();
     newDate.setDate(newDate.getDate());
-    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+    $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ', ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 
 /*    setInterval(function () {
         var seconds = new Date().getSeconds();
