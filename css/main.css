@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Muse;
+    src: local("MuseoSansCyrl"), /* проверяем наличие шрифта в ОС пользователя */
+        url(../fonts/MuseoSansCyrl.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muse_0;
+    src: local("MuseoSansCyrl"), /* проверяем наличие шрифта в ОС пользователя */
+        url(../fonts/MuseoSansCyrl_0.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muse_1;
+    src: local("MuseoSansCyrl"), /* проверяем наличие шрифта в ОС пользователя */
+        url(../fonts/MuseoSansCyrl_1.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muse_2;
+    src: local("MuseoSansCyrl"), /* проверяем наличие шрифта в ОС пользователя */
+        url(../fonts/MuseoSansCyrl_2.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muse_3;
+    src: local("MuseoSansCyrl"), /* проверяем наличие шрифта в ОС пользователя */
+        url(../fonts/MuseoSansCyrl_3.otf);
+    font-weight: normal;
+    font-style: normal;
+}

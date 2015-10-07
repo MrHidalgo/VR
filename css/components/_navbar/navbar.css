@@ -1,4 +1,56 @@
 .navbar {
-  min-height: 64px; }
+  min-height: 64px;
+  border: 0;
+  border-bottom: 1px solid #c2c7d1; }
+  .navbar .navbar-header {
+    min-height: 64px; }
+    .navbar .navbar-header .navbar-brand {
+      height: 64px;
+      width: 282.5px;
+      padding: 0;
+      background-color: #1369a2; }
+      .navbar .navbar-header .navbar-brand .logo {
+        float: left;
+        width: 52px;
+        height: 64px;
+        background: url("../../../image/navbar/logo.png") no-repeat center;
+        background-size: contain;
+        margin: 0 20px; }
+      .navbar .navbar-header .navbar-brand span.brand-logo {
+        display: -webkit-box;
+        font: 18px "Muse_0";
+        color: #fff;
+        padding-top: 11px; }
+    .navbar .navbar-header .slide-left {
+      width: 93px;
+      transition: .5s; }
+    .navbar .navbar-header button.btn.btn-click {
+      display: block;
+      width: 45px;
+      height: 64px;
+      border-top-right-radius: 2.5em;
+      border-bottom-right-radius: 2.5em;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      outline: 0;
+      box-shadow: none;
+      background-color: #3498db;
+      border-bottom: 1px solid #1369a2;
+      border-right: 1px solid #1369a2;
+      border-top: 1px solid #1369a2; }
+      .navbar .navbar-header button.btn.btn-click .icon-arrow-left {
+        display: inline-block;
+        width: 9.5px;
+        height: 17.5px;
+        background: url("../../../image/navbar/icon-arrow.png") no-repeat center;
+        background-size: contain; }
+      .navbar .navbar-header button.btn.btn-click .icon-arrow-right {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: 1s; }
+  .navbar .navbar-collapse {
+    min-height: 64px; }
 
 /*# sourceMappingURL=navbar.css.map */
