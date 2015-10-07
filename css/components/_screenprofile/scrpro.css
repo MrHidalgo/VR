@@ -1,0 +1,101 @@
+#screen-profile {
+  width: 100%;
+  height: 100%;
+  background: url("../../../image/screenprofile/test.jpg") no-repeat center;
+  background-size: cover;
+  overflow: hidden; }
+  #screen-profile #screen {
+    height: 100%; }
+    #screen-profile #screen .row .arms {
+      max-width: 17%;
+      margin: 6% auto 3%; }
+    #screen-profile #screen .row > p {
+      color: #fff;
+      font: 3.7em "Muse_0"; }
+    #screen-profile #screen .row .clock {
+      margin-top: 3%;
+      color: #fed500; }
+      #screen-profile #screen .row .clock #Date {
+        font: 26px 'Muse_0';
+        text-align: center;
+        text-shadow: 0 0 5px #00c6ff; }
+      #screen-profile #screen .row .clock ul {
+        padding: 0px;
+        text-align: center; }
+        #screen-profile #screen .row .clock ul > li {
+          display: inline;
+          font: 5em 'Muse_0';
+          text-shadow: 0 0 5px #00c6ff; }
+        #screen-profile #screen .row .clock ul .point {
+          position: relative;
+          -moz-animation: mymove 1s ease infinite;
+          -webkit-animation: mymove 1s ease infinite;
+          padding-left: 10px;
+          padding-right: 10px;
+          vertical-align: super; }
+  #screen-profile #profile {
+    display: none;
+    height: 100%; }
+    #screen-profile #profile .row .top-block {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 14%;
+      background-color: rgba(19, 105, 162, 0.8);
+      box-shadow: 0 0.5px 1px rgba(255, 255, 255, 0.5); }
+      #screen-profile #profile .row .top-block > p {
+        font: 2.4em 'Muse_1';
+        color: #fff;
+        padding: 2.1%; }
+    #screen-profile #profile .row .center-block {
+      position: absolute;
+      top: 14%;
+      width: 100%;
+      height: 60%;
+      padding: 1% 0; }
+      #screen-profile #profile .row .center-block > i.face {
+        margin: 3% auto 0;
+        width: 330px;
+        height: 330px;
+        background: url("../../../image/screenprofile/Dr-house.jpg") no-repeat center;
+        background-size: cover;
+        box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6); }
+    #screen-profile #profile .row .bottom-block {
+      position: absolute;
+      width: 100%;
+      height: 26%;
+      bottom: 0;
+      background-color: rgba(19, 105, 162, 0.8);
+      box-shadow: 0 -0.6px 1px rgba(255, 255, 255, 0.6); }
+      #screen-profile #profile .row .bottom-block > p:first-child {
+        color: #fff;
+        font: 2.3em 'Muse_1';
+        line-height: 2.5; }
+      #screen-profile #profile .row .bottom-block .discription > p {
+        color: #a6d9f4;
+        font: 1.9em 'Muse_0'; }
+      #screen-profile #profile .row .bottom-block .discription > p:last-child {
+        margin-bottom: 0; }
+
+@-webkit-keyframes mymove {
+  0% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff; }
+  50% {
+    opacity: 0;
+    text-shadow: none; }
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff; } }
+@-moz-keyframes mymove {
+  0% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff; }
+  50% {
+    opacity: 0;
+    text-shadow: none; }
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff; } }
+
+/*# sourceMappingURL=scrpro.css.map */
