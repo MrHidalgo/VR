@@ -1,0 +1,93 @@
+@import "../_mixin/mixin";
+
+//SCREEN
+#screen-profile{
+  width: $w_all;
+  height: $w_all;
+  background: url("../../../image/screenprofile/test.jpg") no-repeat center;
+  background-size: cover;
+
+  #screen{
+    height: 100%;
+
+    .row{
+      .arms {
+        max-width: 17%;
+        margin: 6% auto 3%;
+      }// /-arms
+
+      >p{
+        color: $c_white;
+        font: 3.7em "Muse_0";
+      }
+
+      .clock {
+        margin-top: 3%;
+        color: $c_yellow;
+
+        #Date {
+          font: 26px 'Muse_0';
+          text-align: center;
+          text-shadow:0 0 5px $c_shadowblue;
+        }// /-Date
+
+        ul {
+          padding:0px;
+          text-align:center;
+
+          >li{
+            display:inline;
+            font: 5em 'Muse_0';
+            text-shadow:0 0 5px $c_shadowblue;
+          }
+
+          .point {
+            position:relative;
+            -moz-animation:mymove 1s ease infinite;
+            -webkit-animation:mymove 1s ease infinite;
+            padding-left:10px;
+            padding-right:10px;
+            vertical-align: super;
+          }// /-point
+        }// /-ul
+      }// /-clock
+    }// /-row
+  }// /-screen
+
+  #profile{
+
+  }
+}// /-SCREEN_PROFILE
+
+
+@-webkit-keyframes mymove
+{
+  0% {
+    opacity:1.0;
+    text-shadow:0 0 20px #00c6ff;
+  }
+  50% {
+    opacity:0;
+    text-shadow:none;
+  }
+  100% {
+    opacity:1.0;
+    text-shadow:0 0 20px #00c6ff;
+  }
+}
+
+@-moz-keyframes mymove
+{
+  0% {
+    opacity:1.0;
+    text-shadow:0 0 20px #00c6ff;
+  }
+  50% {
+    opacity:0;
+    text-shadow:none;
+  }
+  100% {
+    opacity:1.0;
+    text-shadow:0 0 20px #00c6ff;
+  }
+}

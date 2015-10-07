@@ -11,6 +11,7 @@
     <link href="css/advanced/bootstrap.min.css" rel="stylesheet">
 
     <!-- Components-->
+    <link rel="stylesheet" href="css/components/_screenprofile/screen.css"/>
 
     <!-- Main-->
     <link rel="stylesheet" href="css/main.css"/>
@@ -26,12 +27,45 @@
 <body>
 
 <!--SCREENSAVER-->
-<section id="screensaver">
-    <div class="container-fluid">
+<section id="screen-profile">
+    <div id="screen" class="container-fluid">
         <div class="row">
+            <!-- arms-->
+            <img src="image/screenprofile/arms.png" alt="arms" class="img-responsive arms"/>
 
+            <!-- slogan-->
+            <p class="text-uppercase text-center">погоджувальна рада</p>
+
+            <!-- clock-->
+            <div class="clock">
+                <div id="Date"></div>
+                <ul>
+                    <li id="hours"></li>
+                    <li class="point">:</li>
+                    <li id="min"></li>
+                    <!--<li class="point">:</li>-->
+                    <!--<li id="sec"></li>-->
+                </ul>
+            </div><!-- /-clock-->
         </div><!-- /-row-->
     </div>
+    <!-- /-screenprofile-->
+
+    <div id="profile" class="container-fluid">
+        <div class="row">
+
+            <!-- top-block-->
+            <div class="top-block"></div><!-- /-top-block-->
+
+            <!-- center-block-->
+            <div class="center-block">
+                <img src="" alt="" class="img-responsive img-circle"/>
+            </div><!-- /-center-block-->
+
+            <!-- bottom-block-->
+            <div class="bottom-block"></div><!-- /-bottom-block-->
+        </div>
+    </div><!-- /-profile-->
 </section><!-- /-SCREENSAVER-->
 
 <!--PROFILE-->
@@ -41,5 +75,8 @@
     <script src="js/advanced/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/advanced/bootstrap.min.js"></script>
+
+    <!-- Clock-->
+    <script src="js/advanced/clock.js"></script>
 </body>
 </html>
