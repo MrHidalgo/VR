@@ -1,12 +1,11 @@
 /*
-* BTN HIDE LEFT MENU
+*============================================
+* SCREENSAVER PAGE REPLACE PROFILE PAGE
+*============================================
 */
-$('.hide-left-menu').click(function () {
-    $('.navbar-brand').toggleClass('slide-left').animate({
-        transition: '.5s'
-    });
-    $('.brand-logo').toggle('slow');
-    $('.icon-arrow-left').toggleClass('icon-arrow-right').animate({
-        transition: '.5s'
-    });
+$('#screen').click(function(){
+    $('#profile').animate({
+        opacity: '1'
+    }, 1500);
+   $(this).slideUp('1500');
 });
