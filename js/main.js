@@ -4,7 +4,9 @@
 *============================================
 */
 $('#screen').click(function(){
-    $('#profile').animate({
+    $('#profile').css(
+        'display' , 'block'
+    ).animate({
         opacity: '1'
     }, 1500);
    $(this).slideUp('1500');

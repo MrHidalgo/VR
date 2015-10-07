@@ -10,6 +10,7 @@
 
   #screen{
     height: 100%;
+    //display: none;
 
     .row{
       .arms {
@@ -56,10 +57,15 @@
   }// /-screen
 
   #profile{
+    display: none;
     height: 100%;
 
     .row{
       .top-block{
+        position: absolute;
+        top: 0;
+        width: $w_all;
+        height: $w_all - 86%;
         background-color: rgba($c_blue, .8);
         box-shadow: 0 .5px 1px rgba(255,255,255,0.5);
 
@@ -71,23 +77,26 @@
       }// /-top-block
 
       .center-block{
-        padding: 2% 0;
+        position: absolute;
+        top: $w_all - 86%;
+        width: $w_all;
+        height: $w_all - 40%;
+        padding: 1% 0;
 
         >i.face{
-          display: block;
-          margin: 1.5% auto 0;
+          margin: 3% auto 0;
           width: 330px;
           height: 330px;
           background: url("../../../image/screenprofile/Dr-house.jpg") no-repeat center;
           background-size: cover;
-          box-shadow: 0px 0px 5px #fff;
+          box-shadow: 0px 0px 3px rgba(255,255,255,0.6);
         }
       }// /-center-block
 
       .bottom-block{
         position: absolute;
         width: $w_all;
-        padding: 1% 0 2%;
+        height: $w_all - 74%;
         bottom: 0;
         background-color: rgba($c_blue, .8);
         box-shadow: 0 -0.6px 1px rgba(255,255,255,0.6);
@@ -102,6 +111,10 @@
           >p{
             color: $c_textblue;
             font: 1.9em 'Muse_0';
+          }
+
+          >p:last-child{
+            margin-bottom: 0;
           }
         }// /-discription
       }// /-bottom-block
