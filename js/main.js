@@ -61,6 +61,15 @@ $('.arrow-swap, .arrow-swap').click(function(){
     });
 });
 
+$('.toggle-hide-left').click(function() {
+   $('.navbar-brand, .site-menubar').addClass('slide-left-menu');
+   $('.navbar-brand-text').addClass('hide-menubar');
+   $('.txt-link').addClass('txt-link-hide');
+   $('.navbar-container').addClass('left-side-container');
+   $('.icon-arrow').addClass('icon-arrow-rotate');
+   $('.arrow-swap').addClass('btn-left');
+   $('.content-page').addClass('content-slide');
+});
 
 
 
