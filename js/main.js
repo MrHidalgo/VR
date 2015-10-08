@@ -16,6 +16,28 @@ $('#screen').click(function(){
 
 /*
  *============================================
+ * PROFILE PAGE LOAD CONTENT PAGE
+ *============================================
+ */
+$('#profile').click(function(){
+   window.location.href ='index-content.html';
+});
+
+
+
+/*
+ *============================================
+ * CONTENT PAGE LOAD SCREEN
+ *============================================
+ */
+$('.navbar-brand').click(function(){
+    window.location.href ='index.html';
+});
+
+
+
+/*
+ *============================================
  * SLIDE LEFT/RIGHT MENU
  *============================================
  */

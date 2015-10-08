@@ -72,7 +72,7 @@
         >p{
           font: 2.4em 'Muse_1';
           color: #fff;
-          padding: 2.1%;
+          padding: 3.1%;
         }
       }// /-top-block
 
@@ -80,7 +80,7 @@
         position: absolute;
         top: $w_all - 86%;
         width: $w_all;
-        height: $w_all - 40%;
+        height: $w_all - 34%;
         padding: 1% 0;
 
         >i.face{
@@ -96,10 +96,11 @@
       .bottom-block{
         position: absolute;
         width: $w_all;
-        height: $w_all - 74%;
+        height: $w_all - 80%;
         bottom: 0;
         background-color: rgba($c_blue, .8);
         box-shadow: 0 -0.6px 1px rgba(255,255,255,0.6);
+        padding: 1.5% 0;
 
         >p:first-child{
           color: $c_white;
