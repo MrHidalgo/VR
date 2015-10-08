@@ -125,6 +125,4 @@ $(document).ready(function(){
             }
         });
     });
-
-
 });
