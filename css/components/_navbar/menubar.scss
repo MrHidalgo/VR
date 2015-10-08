@@ -1,6 +1,6 @@
 @import "../_mixin/mixin";
 
-.site-menubar{
+#site-menubar{
   position: fixed;
   top: $h_nav;
   width: $w_left-nav;
@@ -9,6 +9,145 @@
   height: calc(100% - 66px);
 
   &:before{
-    background: url("");
+    content: '';
+    display: block;
+    width: $w_all;
+    height: $w_all;
+    background: url("../../../image/navbar/bg.png") no-repeat center;
+    background-size: cover;
   }
+
+  ul.menu{
+    position: absolute;
+    width: $w_all;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+
+    >li{
+      a{
+        display: inline-block;
+        width: 100%;
+        font: 17px 'Muse_1';
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 0;
+
+        .icon-por-d,
+        .icon-doc,
+        .icon-gol,
+        .icon-users,
+        .icon-mes,
+        .icon-play,
+        .icon-cal,
+        .icon-info,
+        .icon-zak{
+          position: relative;
+          z-index: 10;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 2.8;
+          margin: 0 10px;
+
+          &:before{
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+          }
+        }
+
+        .icon-por-d{
+          &:before{
+            background: url("../../../image/navbar/icon-por-d.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-doc{
+          &:before{
+            background: url("../../../image/navbar/icon-doc.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-gol{
+          &:before{
+            background: url("../../../image/navbar/icon-gol.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-users{
+          &:before{
+            background: url("../../../image/navbar/icon-users.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-mes{
+          &:before{
+            background: url("../../../image/navbar/icon-mes.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-play{
+          &:before{
+            background: url("../../../image/navbar/icon-play.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-cal{
+          &:before{
+            background: url("../../../image/navbar/icon-cal.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-info{
+          &:before{
+            background: url("../../../image/navbar/icon-info.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        .icon-zak{
+          &:before{
+            background: url("../../../image/navbar/icon-zak.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+      }
+
+      &:hover{
+        background-color: rgba($c_white, 0.2);
+      }
+    }// /-li
+
+    >li.active{
+      background-color: #e4f1fa;
+
+      >a{
+        color: $c_text;
+
+        >span:first-child{
+          background-color: $c_blue;
+        }
+      }
+    }// /-li.active
+
+    .txt-link{
+      transition: .5s;
+    }// /-txt-link
+  }// /-menu
 }// /-site-menubar
+
+.txt-link-hide{
+  margin-left: -500px;
+}

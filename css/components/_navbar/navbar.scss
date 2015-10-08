@@ -5,10 +5,6 @@
   border: none;
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
   box-shadow: 0 2px 4px rgba(0,0,0,.08);
-
-  .hide-menubar{
-    display: none !important;
-  }
 }// /-site-navbar
 
 .navbar-fixed-top{
@@ -89,6 +85,10 @@
 /*
 ANIMATION CLASS
 */
+.hide-menubar{
+  display: none !important;
+  transition: 1s;
+}
 .btn-left{
   margin-left: -185px;
   transition: .5s;

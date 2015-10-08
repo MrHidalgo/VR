@@ -46,6 +46,7 @@ $('.arrow-swap, .arrow-swap').click(function(){
         transition: '.5s'
     });
     $('.navbar-brand-text').toggleClass('hide-menubar');
+    $('.txt-link').toggleClass('txt-link-hide');
     $('.navbar-container').toggleClass('left-side-container').animate({
         transition: '.5s'
     });
@@ -58,4 +59,17 @@ $('.arrow-swap, .arrow-swap').click(function(){
     $('.content-page').toggleClass('content-slide').animate({
         transition: '.5s'
     });
+});
+
+
+
+
+/*
+ *============================================
+ * BTN ACTIVE
+ *============================================
+ */
+$(".btn-left-menu").click(function(){
+    $(".btn-left-menu").removeClass("active");
+    $(this).addClass("active")
 });
