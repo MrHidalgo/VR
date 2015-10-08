@@ -1,8 +1,8 @@
 .site-navbar {
   background-color: #1369a2;
   border: none;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); }
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
 .navbar-fixed-top {
   width: 100%; }
@@ -31,7 +31,7 @@
     position: relative;
     height: 66px;
     margin-left: 260px;
-    background-color: #fff;
+    background-color: #f0f2f4;
     padding: 0; }
     .navbar-fixed-top .navbar-container button.arrow-swap {
       display: inline-block;
@@ -58,8 +58,10 @@
       position: absolute;
       top: 0;
       right: 0;
+      width: 110px;
       height: 66px;
-      background-color: #949fb0; }
+      background-color: #949fb0;
+      border-left: 1px solid #fff; }
       .navbar-fixed-top .navbar-container .time-block .clock {
         color: #fff;
         padding: 20px 25px; }
@@ -73,6 +75,29 @@
           .navbar-fixed-top .navbar-container .time-block .clock ul .point {
             position: relative;
             vertical-align: text-bottom; }
+    .navbar-fixed-top .navbar-container .user-info-ava {
+      width: 500px;
+      height: 66px;
+      margin-right: 110px;
+      font-family: 'Muse_0'; }
+      .navbar-fixed-top .navbar-container .user-info-ava .icon-user-face {
+        float: left;
+        display: inline-block;
+        width: 58px;
+        height: 58px;
+        background: url("../../../image/screenprofile/Dr-house.jpg") no-repeat center;
+        background-size: contain;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        vertical-align: middle;
+        margin: 4px 15px; }
+      .navbar-fixed-top .navbar-container .user-info-ava > div {
+        font-size: 16px;
+        line-height: 2;
+        white-space: nowrap; }
+        .navbar-fixed-top .navbar-container .user-info-ava > div > span:first-child {
+          font-family: 'Muse_1';
+          font-size: 18px; }
 
 /*
 ANIMATION CLASS
