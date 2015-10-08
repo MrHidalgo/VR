@@ -3,6 +3,8 @@
   border: none;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); }
+  .site-navbar .hide-menubar {
+    display: none !important; }
 
 .navbar-fixed-top {
   width: 100%; }
@@ -54,14 +56,20 @@
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
         transition: 1s; }
-    .navbar-fixed-top .navbar-container .btn-left {
-      margin-left: -185px;
-      transition: .5s; }
-  .navbar-fixed-top .slide-left-menu {
-    width: 75px;
-    transition: .5s; }
-  .navbar-fixed-top .left-side-container {
-    margin-left: 76px;
-    transition: .5s; }
+
+/*
+ANIMATION CLASS
+*/
+.btn-left {
+  margin-left: -185px;
+  transition: .5s; }
+
+.slide-left-menu {
+  width: 75px !important;
+  transition: .5s; }
+
+.left-side-container {
+  margin-left: 76px !important;
+  transition: .5s; }
 
 /*# sourceMappingURL=navbar.css.map */

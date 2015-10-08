@@ -1,0 +1,23 @@
+@import "../_mixin/mixin";
+
+#content-page{
+  position: fixed;
+  top: $h_nav;
+  left: $w_left-nav;
+  width: $w_all;
+  width: -webkit-calc(100% - 260px);
+  width: calc(100% - 260px);
+  height: 100%;
+}// /-content-page
+
+
+
+/*
+ANIMATION CLASS
+*/
+.content-slide{
+  left: 75px !important;
+  width: -webkit-calc(100% - 75px) !important;
+  width: calc(100% - 75px) !important;
+  transition: .5s;
+}

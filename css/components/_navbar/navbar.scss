@@ -5,6 +5,10 @@
   border: none;
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
   box-shadow: 0 2px 4px rgba(0,0,0,.08);
+
+  .hide-menubar{
+    display: none !important;
+  }
 }// /-site-navbar
 
 .navbar-fixed-top{
@@ -78,20 +82,22 @@
         transition: 1s;
       }
     }// /-arrow-swap
-
-    .btn-left{
-      margin-left: -185px;
-      transition: .5s;
-    }
   }// /-navbar-container
-
-  .slide-left-menu{
-    width: 75px;
-    transition: .5s;
-  }
-
-  .left-side-container{
-    margin-left: 76px;
-    transition: .5s;
-  }
 }// /-navbar-fixed-top
+
+
+/*
+ANIMATION CLASS
+*/
+.btn-left{
+  margin-left: -185px;
+  transition: .5s;
+}
+.slide-left-menu{
+  width: 75px !important;
+  transition: .5s;
+}
+.left-side-container{
+  margin-left: 76px !important;
+  transition: .5s;
+}

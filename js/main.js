@@ -42,10 +42,10 @@ $('.navbar-brand').click(function(){
  *============================================
  */
 $('.arrow-swap, .arrow-swap').click(function(){
-    $('.navbar-brand').toggleClass('slide-left-menu').animate({
+    $('.navbar-brand, .site-menubar').toggleClass('slide-left-menu').animate({
         transition: '.5s'
     });
-    $('.navbar-brand-text').toggle('fast');
+    $('.navbar-brand-text').toggleClass('hide-menubar');
     $('.navbar-container').toggleClass('left-side-container').animate({
         transition: '.5s'
     });
@@ -53,6 +53,9 @@ $('.arrow-swap, .arrow-swap').click(function(){
         transition: '.5s'
     });
     $('.arrow-swap').toggleClass('btn-left').animate({
+        transition: '.5s'
+    });
+    $('.content-page').toggleClass('content-slide').animate({
         transition: '.5s'
     });
 });
