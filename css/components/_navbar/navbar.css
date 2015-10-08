@@ -54,6 +54,25 @@
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
         transition: 1s; }
+    .navbar-fixed-top .navbar-container .time-block {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 66px;
+      background-color: #949fb0; }
+      .navbar-fixed-top .navbar-container .time-block .clock {
+        color: #fff;
+        padding: 20px 25px; }
+        .navbar-fixed-top .navbar-container .time-block .clock ul {
+          padding: 0px;
+          margin: 0;
+          text-align: center; }
+          .navbar-fixed-top .navbar-container .time-block .clock ul > li {
+            display: inline;
+            font: 20px 'Muse_1'; }
+          .navbar-fixed-top .navbar-container .time-block .clock ul .point {
+            position: relative;
+            vertical-align: text-bottom; }
 
 /*
 ANIMATION CLASS

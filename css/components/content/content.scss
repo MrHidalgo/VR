@@ -8,6 +8,10 @@
   width: -webkit-calc(100% - 260px);
   width: calc(100% - 260px);
   height: 100%;
+
+  -webkit-box-shadow: -3px 0px 3px 0px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: -3px 0px 3px 0px rgba(50, 50, 50, 0.21);
+  box-shadow: -3px 0px 3px 0px rgba(50, 50, 50, 0.21);
 }// /-content-page
 
 

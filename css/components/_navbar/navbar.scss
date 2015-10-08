@@ -78,6 +78,35 @@
         transition: 1s;
       }
     }// /-arrow-swap
+
+    .time-block{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: $h_nav;
+      background-color: $c_time;
+
+      .clock {
+        color: $c_white;
+        padding: 20px 25px;
+
+        ul {
+          padding:0px;
+          margin: 0;
+          text-align:center;
+
+          >li{
+            display:inline;
+            font: 20px 'Muse_1';
+          }
+
+          .point {
+            position:relative;
+            vertical-align: text-bottom;
+          }// /-point
+        }// /-ul
+      }// /-clock
+    }
   }// /-navbar-container
 }// /-navbar-fixed-top
 
