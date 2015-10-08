@@ -8,9 +8,10 @@
     <title>Погоджувальна рада</title>
 
     <!-- Bootstrap -->
-    <link href="css/advanced/bootstrap.min.css" rel="stylesheet">
+    <link href="css/advanced/bootstrap.css" rel="stylesheet">
 
     <!-- Components-->
+    <link rel="stylesheet" href="css/components/_navbar/navbar.css"/>
 
     <!-- Main-->
     <link rel="stylesheet" href="css/main.css"/>
@@ -25,10 +26,24 @@
 </head>
 <body>
 
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega">
+        <div class="navbar-header">
+            <div class="navbar-brand navbar-brand-center">
+                <i class="navbar-brand-logo"></i>
+                <span class="navbar-brand-text text-uppercase">погоджувальна рада</span>
+            </div>
+        </div>
+        <div class="navbar-container container-fluid">
+            <button class="btn arrow-swap">
+                <i class="icon-arrow"></i>
+            </button>
+        </div>
+    </nav>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/advanced/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/advanced/bootstrap.min.js"></script>
+    <script src="js/advanced/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

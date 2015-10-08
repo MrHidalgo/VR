@@ -1,5 +1,97 @@
 @import "../_mixin/mixin";
 
-.navbar{
+.site-navbar{
+  background-color: $c_blue;
+  border: none;
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}// /-site-navbar
 
-}
+.navbar-fixed-top{
+  width: $w_all;
+
+  .navbar-header{
+    width: 260px;
+    color: $c_white;
+    background-color: transparent;
+
+    .navbar-brand{
+      position: relative;
+      height: $h_nav;
+      font-family: 'Muse_0';
+      color: $c_white;
+      cursor: pointer;
+
+      padding: 0;
+
+      .navbar-brand-logo{
+        float: left;
+        width: 44px;
+        height: 37.5px;
+
+        background: url("../../../image/navbar/logo.png") no-repeat center;
+        background-size: cover;
+
+        margin: 14px 15px;
+      }
+
+      .navbar-brand-text{
+        display: table-cell;
+        padding: 15px 5px;
+      }// /-navbar-brand-text
+    }// /-navbar-brand
+  }// /-navbar-header
+
+  .navbar-container{
+    position: relative;
+    height: $h_nav;
+    margin-left: 260px;
+    background-color: $c_white;
+    padding: 0;
+
+    button.arrow-swap{
+      display: inline-block;
+      height: $h_nav;
+      width: $h_nav - 16px;
+
+      background-color: $c_lightblue;
+      border-radius: 0;
+      border-top-right-radius: 2.3em;
+      border-bottom-right-radius: 2.3em;
+
+      outline: 0;
+
+      .icon-arrow{
+        display: inline-block;
+        width: 14.5px;
+        height: 20px;
+
+        background: url("../../../image/navbar/icon-arrow.png") no-repeat center;
+        background-size: contain;
+      }// /-icon-arrow
+
+      .icon-arrow-rotate{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: 1s;
+      }
+    }// /-arrow-swap
+
+    .btn-left{
+      margin-left: -185px;
+      transition: .5s;
+    }
+  }// /-navbar-container
+
+  .slide-left-menu{
+    width: 75px;
+    transition: .5s;
+  }
+
+  .left-side-container{
+    margin-left: 76px;
+    transition: .5s;
+  }
+}// /-navbar-fixed-top

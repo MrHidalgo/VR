@@ -1,3 +1,67 @@
+.site-navbar {
+  background-color: #1369a2;
+  border: none;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); }
 
+.navbar-fixed-top {
+  width: 100%; }
+  .navbar-fixed-top .navbar-header {
+    width: 260px;
+    color: #fff;
+    background-color: transparent; }
+    .navbar-fixed-top .navbar-header .navbar-brand {
+      position: relative;
+      height: 66px;
+      font-family: 'Muse_0';
+      color: #fff;
+      cursor: pointer;
+      padding: 0; }
+      .navbar-fixed-top .navbar-header .navbar-brand .navbar-brand-logo {
+        float: left;
+        width: 44px;
+        height: 37.5px;
+        background: url("../../../image/navbar/logo.png") no-repeat center;
+        background-size: cover;
+        margin: 14px 15px; }
+      .navbar-fixed-top .navbar-header .navbar-brand .navbar-brand-text {
+        display: table-cell;
+        padding: 15px 5px; }
+  .navbar-fixed-top .navbar-container {
+    position: relative;
+    height: 66px;
+    margin-left: 260px;
+    background-color: #fff;
+    padding: 0; }
+    .navbar-fixed-top .navbar-container button.arrow-swap {
+      display: inline-block;
+      height: 66px;
+      width: 50px;
+      background-color: #3498db;
+      border-radius: 0;
+      border-top-right-radius: 2.3em;
+      border-bottom-right-radius: 2.3em;
+      outline: 0; }
+      .navbar-fixed-top .navbar-container button.arrow-swap .icon-arrow {
+        display: inline-block;
+        width: 14.5px;
+        height: 20px;
+        background: url("../../../image/navbar/icon-arrow.png") no-repeat center;
+        background-size: contain; }
+      .navbar-fixed-top .navbar-container button.arrow-swap .icon-arrow-rotate {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: 1s; }
+    .navbar-fixed-top .navbar-container .btn-left {
+      margin-left: -185px;
+      transition: .5s; }
+  .navbar-fixed-top .slide-left-menu {
+    width: 75px;
+    transition: .5s; }
+  .navbar-fixed-top .left-side-container {
+    margin-left: 76px;
+    transition: .5s; }
 
 /*# sourceMappingURL=navbar.css.map */
