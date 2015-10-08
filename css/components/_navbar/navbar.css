@@ -64,7 +64,7 @@
       border-left: 1px solid #fff; }
       .navbar-fixed-top .navbar-container .time-block .clock {
         color: #fff;
-        padding: 20px 25px; }
+        padding: 20px 0px; }
         .navbar-fixed-top .navbar-container .time-block .clock ul {
           padding: 0px;
           margin: 0;
@@ -93,8 +93,9 @@
         margin: 4px 15px; }
       .navbar-fixed-top .navbar-container .user-info-ava > div {
         font-size: 16px;
-        line-height: 2;
-        white-space: nowrap; }
+        line-height: 1.3;
+        white-space: nowrap;
+        padding-top: 12px; }
         .navbar-fixed-top .navbar-container .user-info-ava > div > span:first-child {
           font-family: 'Muse_1';
           font-size: 18px; }
