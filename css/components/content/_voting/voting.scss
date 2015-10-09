@@ -1,0 +1,35 @@
+@import "../../_mixin/mixin";
+
+//VOTING
+.voting{
+  .block-timer-low{
+    position: absolute;
+    width: $w_all;
+    height: $w_all - 40%;
+    background-color: #fafafa;
+
+    .left-col{
+      font-family: 'Muse_1';
+      padding: 7.5% 6%;
+      line-height: 2;
+
+      >p{
+        margin-top: 30px;
+        font-size: 18px;
+        color: lighten($c_text, 15%);
+      }
+    }// /-left-col
+
+    .right-col{
+      height: $w_all;
+      background-color: $c_navbar-top;
+    }
+  }// /-block-timer-low
+
+  .foot-btn{
+    position: absolute;
+    height: calc(100% - 60%);
+    bottom: 0;
+  }// /-foot-btn
+}
+// /-VOTING
