@@ -7,35 +7,35 @@ body{
 @font-face {
     font-family: Muse;
     src: local("MuseoSansCyrl"),
-        url(../fonts/MuseoSansCyrl.otf);
+        url(../fonts/museosans/MuseoSansCyrl.otf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Muse_0;
     src: local("MuseoSansCyrl"),
-        url(../fonts/MuseoSansCyrl_0.otf);
+        url(../fonts/museosans/MuseoSansCyrl_0.otf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Muse_1;
     src: local("MuseoSansCyrl"),
-        url(../fonts/MuseoSansCyrl_1.otf);
+        url(../fonts/museosans/MuseoSansCyrl_1.otf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Muse_2;
     src: local("MuseoSansCyrl"),
-        url(../fonts/MuseoSansCyrl_2.otf);
+        url(../fonts/museosans/MuseoSansCyrl_2.otf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Muse_3;
     src: local("MuseoSansCyrl"),
-        url(../fonts/MuseoSansCyrl_3.otf);
+        url(../fonts/museosans/MuseoSansCyrl_3.otf);
     font-weight: normal;
     font-style: normal;
 }
