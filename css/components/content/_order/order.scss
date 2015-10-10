@@ -38,14 +38,32 @@
               overflow: hidden;
             }
 
-            &:first-child {
+            &:first-child{
               background-color: #d7dce4;
               border-left: 10px solid $c_time;
+            }
+
+            &:last-child{
+              background-color: #d7dce4;
+
+              >a{
+                text-align: center;
+                float: none !important;
+              }
             }
 
             &:nth-child(2),
             &:nth-child(4) {
               background-color: #e8eaed;
+            }
+
+            .btn-more-back{
+              color: $c_white;
+              background-color: $c_time;
+            }
+
+            >p{
+              line-height: 1.7;
             }
           }
         }
@@ -77,6 +95,7 @@
         margin-top: 60px;
         height: calc(100% - 60px);
         overflow: auto;
+        -webkit-overflow-scrolling: touch;
 
         > p {
           min-height: $h_nav;

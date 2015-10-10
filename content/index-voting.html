@@ -15,9 +15,20 @@
         </div>
 
         <div class="col-xs-12 foot-btn text-center">
-            <button class="btn btn-default">ЗА</button>
-            <button class="btn btn-default">УТРИМАВСЯ</button>
-            <button class="btn btn-default">ПРОТИ</button>
+            <div class="btn-foot-group">
+                <div class="btn btn-default btn-voting">
+                    <i class="yes"></i>
+                    <span class="btn-txt">ЗА</span>
+                </div>
+                <div class="btn btn-default btn-voting">
+                    <i class="nt"></i>
+                    <span class="btn-txt">УТРИМАВСЯ</span>
+                </div>
+                <div class="btn btn-default btn-voting">
+                    <i class="no"></i>
+                    <span class="btn-txt">ПРОТИ</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -50,6 +61,18 @@
         onEndCallback: function() {
 //            alert("Time out!");
         }
+    });
+
+    /*
+     *============================================
+     * BTN ACTIVE VOTING
+     *============================================
+     */
+    $(".btn-voting").click(function(){
+        $(this).find('i').hide();
+        $(this).find('.btn-txt').css(
+                'color' , '#fff'
+        );
     });
 
 </script>

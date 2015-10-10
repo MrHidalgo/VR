@@ -12,13 +12,16 @@ $c_shadowblue: #00c6ff;
 $c_textblue: #a6d9f4;
 $c_lightblue: #3498db;
 $c_blue: #1369a2;
+$c_darkblue: #075fa2;
 $c_yellow: #fed500;
+$c_green: #36b66c;
+$c_red: #db5b29;
 
 
 // WIDTH==============================
 $w_all: 100%;
 $w_left-nav: 260px;
-$w_xs: 420px;
+$w_xs: 768px;
 $w_sm: 768px;
 $w_md: 992px;
 $w_lg: 1200px;
@@ -45,15 +48,15 @@ $f_muse: 'Muse', sans-serif;
     @content;
   }
 }
-  //  MIN
-  @mixin media-def-min($min:0){
-    @media only screen and(min-width: $min){
-      @content;
-    }
+//  MIN
+@mixin media-def-min($min:0){
+  @media only screen and(min-width: $min){
+    @content;
   }
-  //MAX-MIN
-  @mixin media-def-min_max($s:0, $e:1){
-    @media only screen and(min-width: $s) and (max-width: $e){
-      @content;
-    }
+}
+//MAX-MIN
+@mixin media-def-min_max($s:0, $e:1){
+  @media only screen and(min-width: $s) and (max-width: $e){
+    @content;
   }
+}

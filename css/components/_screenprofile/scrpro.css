@@ -1,5 +1,6 @@
 #screen-profile {
   height: 100%;
+  max-height: 100%;
   background: url("../../../image/screenprofile/test.jpg") no-repeat center;
   background-size: cover;
   overflow: hidden; }
@@ -22,7 +23,7 @@
         @media only screen and (max-width: 668px) {
           #screen-profile #screen .row > p {
             font-size: 3em; } }
-        @media only screen and (max-width: 420px) {
+        @media only screen and (max-width: 768px) {
           #screen-profile #screen .row > p {
             font-size: 2em; } }
       #screen-profile #screen .row .clock {
@@ -35,7 +36,7 @@
           @media only screen and (max-width: 668px) {
             #screen-profile #screen .row .clock #Date {
               font-size: 23px; } }
-          @media only screen and (max-width: 420px) {
+          @media only screen and (max-width: 768px) {
             #screen-profile #screen .row .clock #Date {
               font-size: 20px; } }
         #screen-profile #screen .row .clock ul {
@@ -48,7 +49,7 @@
             @media only screen and (max-width: 668px) {
               #screen-profile #screen .row .clock ul > li {
                 font-size: 3.5em; } }
-            @media only screen and (max-width: 420px) {
+            @media only screen and (max-width: 768px) {
               #screen-profile #screen .row .clock ul > li {
                 font-size: 3em; } }
           #screen-profile #screen .row .clock ul .point {
@@ -59,49 +60,59 @@
             padding-right: 10px;
             vertical-align: super; }
   #screen-profile #profile {
-    display: none;
-    height: 100%; }
-    #screen-profile #profile .row .top-block {
+    display: none; }
+    @media only screen and (max-width: 767px) {
+      #screen-profile #profile .row {
+        font-size: 75%; } }
+    @media only screen and (max-width: 768px) {
+      #screen-profile #profile .row {
+        font-size: 56%; } }
+    #screen-profile #profile .row .content {
       position: absolute;
+      width: 100%;
       top: 0;
-      width: 100%;
-      height: 14%;
-      background-color: rgba(19, 105, 162, 0.8);
-      box-shadow: 0 0.5px 1px rgba(255, 255, 255, 0.5); }
-      #screen-profile #profile .row .top-block > p {
-        font: 2.4em 'Muse_1';
+      height: 80%; }
+      #screen-profile #profile .row .content > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
-        padding: 3.1%; }
-    #screen-profile #profile .row .center-block {
-      position: absolute;
-      top: 14%;
-      width: 100%;
-      height: 66%;
-      padding: 1% 0; }
-      #screen-profile #profile .row .center-block > i.face {
-        margin: 3% auto 0;
-        width: 330px;
-        height: 330px;
-        background: url("../../../image/screenprofile/Dr-house.jpg") no-repeat center;
-        background-size: cover;
-        box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6); }
+        font: 2.4em 'Muse_1';
+        height: 15%;
+        margin-bottom: 0;
+        background-color: rgba(7, 95, 162, 0.8);
+        box-shadow: 0 0.5px 1px rgba(255, 255, 255, 0.5); }
+      #screen-profile #profile .row .content .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 15%); }
+        #screen-profile #profile .row .content .center .face {
+          width: 330px;
+          height: 330px;
+          background: url("../../../image/screenprofile/Dr-house.jpg") no-repeat center;
+          background-size: cover;
+          box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6); }
+          @media only screen and (max-width: 668px) {
+            #screen-profile #profile .row .content .center .face {
+              width: 200px;
+              height: 200px; } }
     #screen-profile #profile .row .bottom-block {
       position: absolute;
       width: 100%;
-      height: 20%;
-      bottom: 0;
-      background-color: rgba(19, 105, 162, 0.8);
-      box-shadow: 0 -0.6px 1px rgba(255, 255, 255, 0.6);
-      padding: 1.5% 0; }
-      #screen-profile #profile .row .bottom-block > p:first-child {
-        color: #fff;
+      top: 80%;
+      height: calc(100% - 80%);
+      background-color: rgba(7, 95, 162, 0.8);
+      box-shadow: 0 -0.6px 1px rgba(255, 255, 255, 0.5);
+      padding-top: 2%; }
+      #screen-profile #profile .row .bottom-block > p {
         font: 2.3em 'Muse_1';
-        line-height: 2.5; }
-      #screen-profile #profile .row .bottom-block .discription > p {
-        color: #a6d9f4;
-        font: 1.9em 'Muse_0'; }
-      #screen-profile #profile .row .bottom-block .discription > p:last-child {
+        color: #fff;
         margin-bottom: 0; }
+        #screen-profile #profile .row .bottom-block > p:first-child {
+          margin-bottom: 10px; }
+        #screen-profile #profile .row .bottom-block > p:last-child {
+          font-size: 2.1em; }
 
 @-webkit-keyframes mymove {
   0% {

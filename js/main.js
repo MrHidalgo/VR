@@ -75,7 +75,7 @@ $('.toggle-hide-left').click(function() {
 
 /*
  *============================================
- * BTN ACTIVE
+ * BTN ACTIVE LEFT MENU
  *============================================
  */
 $(".btn-left-menu").click(function(){
