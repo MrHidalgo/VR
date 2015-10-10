@@ -11,6 +11,7 @@
   width: $w_all;
 
   .navbar-header{
+    float: left;
     width: 260px;
     color: $c_white;
     background-color: transparent;
@@ -152,6 +153,9 @@
       background-color: #fff;
       font-family: 'Muse_0';
 
+      @include media-def-max($w_xs - 1){
+        display: none;
+      }
       input{
         color: #ccc;
         border: 0;
@@ -179,6 +183,16 @@
       }
     }// /-custom-search-input
   }// /-navbar-container
+
+  .nabar-txt{
+    .user-info-ava{
+      width: 100px;
+
+      >div{
+        display: none;
+      }
+    }// /-user-info-ava
+  }// /-nabar-txt
 }// /-navbar-fixed-top
 
 

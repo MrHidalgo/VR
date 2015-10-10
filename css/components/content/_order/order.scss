@@ -9,6 +9,11 @@
   .row {
     margin: 0;
 
+    .order-wrap-main{
+      min-height: 100%;
+      overflow: auto;
+
+    }
     table {
       > thead {
         > tr {
@@ -76,7 +81,7 @@
       font-family: 'Muse_0';
 
       > div.head-btn {
-        position: fixed;
+        position: relative;
         z-index: 1;
         height: $h_nav - 6px;
         background-color: $c_wrap;
@@ -95,7 +100,6 @@
         margin-top: 60px;
         height: calc(100% - 60px);
         overflow: auto;
-        -webkit-overflow-scrolling: touch;
 
         > p {
           min-height: $h_nav;

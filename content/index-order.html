@@ -3,7 +3,8 @@
 
 
         <!-- FIRST LOW-->
-        <table class="order-table">
+        <div class="order-wrap-main">
+            <table class="order-table">
             <thead>
             <tr>
                 <th class="col-sm-1 text-center">
@@ -270,7 +271,7 @@
 
             </tbody>
         </table>
-        <!-- /-FIRST LOW-->
+        </div><!-- /-FIRST LOW-->
 
         <div class="block-more-low" style="display: none;">
             <div class="col-xs-12 head-btn">
@@ -354,5 +355,9 @@
     $('.btn-more-back').click(function(){
         $('.order-table').fadeToggle('fast');
         $('.block-more-low').fadeToggle('fast');
+    });
+
+    $(document).ready(function() {
+        $('.body-title').niceScroll({touchbehavior:true});
     });
 </script>

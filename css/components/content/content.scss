@@ -1,7 +1,7 @@
 @import "../_mixin/mixin";
 
 #content-page{
-  position: fixed;
+  position: relative;
   top: $h_nav;
   left: $w_left-nav;
   width: $w_all;
