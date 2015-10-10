@@ -1,0 +1,68 @@
+@import "../../_mixin/mixin";
+
+//VOTING
+.voting{
+  .block-timer-low{
+    position: absolute;
+    width: $w_all;
+    height: $w_all - 40%;
+    background-color: #fafafa;
+
+    .left-col{
+      font-family: 'Muse_1';
+      padding: 7.5% 6%;
+      line-height: 2;
+
+      >p{
+        margin-top: 30px;
+        font-size: 18px;
+        color: lighten($c_text, 15%);
+      }
+    }// /-left-col
+
+    .right-col{
+      padding: 7.5% 0;
+      height: $w_all;
+      background-color: $c_navbar-top;
+
+      .ClassyCountdown-wrapper{
+        >div{
+          display: inline-block;
+          position: relative;
+          margin: 10px;
+          background-color: $c_white;
+          border-radius: 50%;
+        }
+
+        .ClassyCountdown-value {
+          width: 100%;
+          line-height: 1em;
+          position: absolute;
+          top: 50%;
+          text-align: center;
+          left: 0;
+          display: block;
+        }
+
+        .ClassyCountdown-seconds{
+          width: 200px !important;
+          height: 200px !important;
+
+          >div{
+            canvas{
+              @extend .ClassyCountdown-seconds;
+            }
+          }
+        }
+      }
+    }
+  }// /-block-timer-low
+
+  .foot-btn{
+    position: absolute;
+    height: calc(100% - 60%);
+    bottom: 0;
+  }// /-foot-btn
+}
+// /-VOTING
+

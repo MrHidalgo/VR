@@ -1,5 +1,55 @@
-<div class="container-fluid">
+
+
+<div class="container-fluid voting">
     <div class="row">
-        <p>VOTING in progress...</p>
+
+        <div class="block-timer-low">
+            <div class="col-xs-9 left-col">
+                <h1>Законопроект - 9458-1</h1>
+                <p>Проект Закону про внесення змін до Закону України "Про адміністративні послуги" - щодо надання інформаційних та інших послуг з використанням електронно-інформаційних систем</p>
+            </div>
+            <div class="col-xs-3 right-col text-center">
+                <h4>Залишилось</h4>
+                <div id="countdown2" class="ClassyCountdownDemo"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 foot-btn text-center">
+            <button class="btn btn-default">ЗА</button>
+            <button class="btn btn-default">УТРИМАВСЯ</button>
+            <button class="btn btn-default">ПРОТИ</button>
+        </div>
     </div>
 </div>
+
+
+<script>
+
+    $('#countdown2').ClassyCountdown({
+        end: $.now() + 60,
+        labels: true,
+        labelsOptions:{
+            lang:{
+                seconds: 'Секунд'
+            },
+            style: 'font-size: 1em;'
+        },
+        style: {
+            element: '',
+            textResponsive:.8,
+            seconds: {
+                gauge: {
+                    thickness: .1,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "#2980b9"
+                },
+                textCSS: 'font-size:25px; font-weight:300; color:#34495e; font-family: \'Muse_1\';'
+            }
+
+        },
+        onEndCallback: function() {
+//            alert("Time out!");
+        }
+    });
+
+</script>

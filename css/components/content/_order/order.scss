@@ -1,0 +1,109 @@
+@import "../../_mixin/mixin";
+
+//OREDER
+.order {
+  font: 15px 'Muse_1';
+  padding: 0;
+  color: $c_text;
+
+  .row {
+    margin: 0;
+
+    table {
+      > thead {
+        > tr {
+          height: $h_nav - 6px;
+          background-color: $c_wrap;
+          @include border(bottom, $c_border);
+
+          th {
+            font-weight: normal;
+
+            > span {
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      // /-thead
+
+      > tbody {
+        > tr {
+          @include border(bottom, $c_border);
+
+          td {
+            padding: 10px;
+            > span {
+              overflow: hidden;
+            }
+
+            &:first-child {
+              background-color: #d7dce4;
+              border-left: 10px solid $c_time;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+              background-color: #e8eaed;
+            }
+          }
+        }
+      }
+      // /-tbody
+    }
+    // /-block-low-list
+
+    .block-more-low {
+      font-family: 'Muse_0';
+
+      > div.head-btn {
+        position: fixed;
+        z-index: 1;
+        height: $h_nav - 6px;
+        background-color: $c_wrap;
+        @include border(bottom, $c_border);
+        line-height: 4;
+
+        > a {
+          margin-left: 5%;
+        }
+      }
+      // /-head-btn
+
+      .body-title {
+        position: absolute;
+        padding: 0;
+        margin-top: 60px;
+        height: calc(100% - 60px);
+        overflow: auto;
+
+        > p {
+          min-height: $h_nav;
+          margin-bottom: 0;
+          padding: 0 15px;
+          line-height: 4.3;
+          @include border(bottom, $c_border);
+        }
+
+        [class^="info-low-"] {
+
+          [class^="col-xs-"] {
+            padding: 15px 15px;
+          }
+
+          .col-xs-8 {
+            > span {
+              line-height: 2.5;
+            }
+          }
+        }
+      }
+      // /-body-title
+    }
+    // /-block-more-low
+  }
+  // /-row
+}
+
+// /-OREDER
