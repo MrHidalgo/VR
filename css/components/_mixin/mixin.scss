@@ -18,6 +18,10 @@ $c_yellow: #fed500;
 // WIDTH==============================
 $w_all: 100%;
 $w_left-nav: 260px;
+$w_xs: 420px;
+$w_sm: 768px;
+$w_md: 992px;
+$w_lg: 1200px;
 
 // HEIGHT=============================
 $h_nav: 66px;
@@ -33,3 +37,23 @@ $f_muse: 'Muse', sans-serif;
     border-#{$place}: 1px solid $color;
   }
 }
+
+//MEDIA=========================
+//  MAX
+@mixin media-def-max($max:1){
+  @media only screen and(max-width: $max){
+    @content;
+  }
+}
+  //  MIN
+  @mixin media-def-min($min:0){
+    @media only screen and(min-width: $min){
+      @content;
+    }
+  }
+  //MAX-MIN
+  @mixin media-def-min_max($s:0, $e:1){
+    @media only screen and(min-width: $s) and (max-width: $e){
+      @content;
+    }
+  }
