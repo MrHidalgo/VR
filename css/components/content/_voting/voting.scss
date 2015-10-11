@@ -12,8 +12,15 @@
 
     .left-col{
       font-family: 'Muse_1';
-      padding: 7.5% 6%;
+      height: 100%;
+      padding: 5%;
       line-height: 2;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: left;
+      -webkit-flex-direction: column;
+      flex-direction: column;
 
       >p{
         margin-top: 30px;
@@ -23,9 +30,16 @@
     }// /-left-col
 
     .right-col{
-      padding: 7.5% 0;
+      //padding: 7.5% 0;
       height: $w_all;
       background-color: $c_navbar-top;
+
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-flex-direction: column;
+      flex-direction: column;
 
       .ClassyCountdown-wrapper{
         >div{
@@ -156,6 +170,112 @@
       }
     }
   }// /-foot-btn
-}
-// /-VOTING
+
+  .result-voting-y{
+
+    .header-res{
+      position: absolute;
+      width: $w_all;
+      height: $w_all - 25%;
+
+      .top-block{
+        height: $w_all - 85%;
+        background-color: #e6e9ee;
+        @include border(bottom, #c3c7d2);
+
+        >p{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height: $w_all;
+          color: $c_text;
+          font: 2em 'Muse_2';
+        }
+      }// /-top-block
+
+      .bottom-block{
+        height: $w_all;
+
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background: url("../../../../image/bg-btn.png") no-repeat center;
+          background-size: cover;
+        }
+
+        .watch-result{
+          position: absolute;
+          width: 100%;
+          top: calc(100% - 85%);
+          height: calc(100% - 15%);
+
+          .left,
+          .right{
+            height: 100%;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+
+            width: $w_all - 50%;
+            height: $w_all;
+
+            padding: 0 1%;
+
+            >p{
+              font: 2em 'Muse_2';
+              margin-bottom: 0;
+              line-height: 2;
+            }
+          }
+
+          .left{
+            float: left;
+          } // /-left
+
+          .right{
+            float: right;
+
+            >p{
+              &:first-child{
+                color: $c_green;
+              }
+              &:nth-child(2){
+               color: $c_yellow;
+              }
+              &:nth-child(3){
+               color: $c_red;
+              }
+              &:nth-child(4){
+               color: $c_blue;
+              }
+            }
+          }// /-right
+        }// /-watch-result
+      }// /-bottom-block
+    }// /-header-res
+
+    .footer-res{
+      position: absolute;
+      width: $w_all;
+      top: calc(100% - 25%);
+      height: $w_all - 75%;
+
+      background-color: $c_green;
+
+      >p{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height: $w_all;
+        margin-bottom: 0;
+        color: $c_white;
+        font: 3em 'Muse_1';
+      }
+    }// /-footer-res
+  }// /-result-voting
+}// /-VOTING
 
