@@ -2,4 +2,59 @@
 
 .chat{
 
+  .list-users{
+    padding: 0;
+
+    .btn-add-user{
+      padding: 15px;
+      background-color: $c_wrap;
+
+      .btn-group-justified{
+        font: 1em 'Muse_1';
+        background-color: $c_blue;
+        color: $c_white;
+        border-radius: 6px;
+      }
+    }// /-btn-add-user
+
+    .list-status-user{
+      [class^='user-']{
+        border-left: 5px solid $c_green;
+        .row{
+          padding: 4% 0;
+          margin: 0;
+
+          .col-sm-3{
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+
+            .icon{
+              display: inline-block;
+              width: 50px;
+              height: 50px;
+
+              background: url("../../../../image/screenprofile/Dr-house.jpg");
+              background-size: cover;
+              border-radius: 50%;
+            }// /-icon
+          }
+
+          .col-sm-9{
+            >p{
+              display: flex;
+              display: -webkit-flex;
+              justify-content: center;
+              -webkit-flex-direction: column;
+              flex-direction: column;
+            }
+          }
+        }
+      }// /-[class^='user-']
+    }// /-list-status-user
+  }// /-list-users
+
+  .message-list{
+
+  }// /-message-list
 }// /-chat
