@@ -100,23 +100,21 @@
         .navbar-fixed-top .navbar-container .user-info-ava > div > span:first-child {
           font-family: 'Muse_1';
           font-size: 18px; }
-    .navbar-fixed-top .navbar-container #custom-search-input {
-      position: absolute;
-      top: 0;
-      width: 350px;
-      margin: 9px 10px 9px 100px;
-      border: 1px solid #E4E4E4;
-      border-radius: 0.8em;
-      background-color: #fff;
-      font-family: 'Muse_0'; }
-      @media only screen and (max-width: 767px) {
-        .navbar-fixed-top .navbar-container #custom-search-input {
-          display: none; } }
-      .navbar-fixed-top .navbar-container #custom-search-input input {
-        color: #ccc;
-        border: 0;
-        box-shadow: none; }
-      .navbar-fixed-top .navbar-container #custom-search-input button {
+    .navbar-fixed-top .navbar-container .navbar-form input {
+      color: #ccc;
+      border: 0;
+      border-top: 1px solid #d6dbdf;
+      border-left: 1px solid #d6dbdf;
+      border-bottom: 1px solid #d6dbdf;
+      box-shadow: none;
+      font: 1.1em 'Muse_1'; }
+    .navbar-fixed-top .navbar-container .navbar-form .input-group-btn {
+      border-top: 1px solid #d6dbdf;
+      border-right: 1px solid #d6dbdf;
+      border-bottom: 1px solid #d6dbdf;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px; }
+      .navbar-fixed-top .navbar-container .navbar-form .input-group-btn button {
         margin: 2px 0 0 0;
         background: none;
         box-shadow: none;
@@ -124,12 +122,12 @@
         color: #666666;
         padding: 0 8px 0 10px;
         outline: 0; }
-        .navbar-fixed-top .navbar-container #custom-search-input button:hover {
+        .navbar-fixed-top .navbar-container .navbar-form .input-group-btn button:hover {
           border: 0;
           box-shadow: none; }
-      .navbar-fixed-top .navbar-container #custom-search-input .glyphicon-search {
-        font-size: 20px;
-        color: #ccc; }
+        .navbar-fixed-top .navbar-container .navbar-form .input-group-btn button .glyphicon-search {
+          font-size: 20px;
+          color: #999999; }
   .navbar-fixed-top .nabar-txt .user-info-ava {
     width: 100px; }
     .navbar-fixed-top .nabar-txt .user-info-ava > div {

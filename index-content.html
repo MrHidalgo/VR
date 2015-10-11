@@ -47,13 +47,18 @@
                 <span class="navbar-brand-text text-uppercase">погоджувальна рада</span>
             </div>
         </div>
-        <div class="navbar-container container-fluid">
-            <button class="btn arrow-swap">
-                <i class="icon-arrow"></i>
-            </button>
 
-            <!-- search-->
-            <div id="custom-search-input">
+        <div class="collapse navbar-collapse navbar-container" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <button class="btn arrow-swap">
+                        <i class="icon-arrow"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
                 <div class="input-group col-md-12">
                     <input type="text" class="form-control input-lg" placeholder="Пошук..." />
                     <span class="input-group-btn">
@@ -62,30 +67,34 @@
                         </button>
                     </span>
                 </div>
-            </div><!-- /-search-->
+            </form>
 
-            <!-- profile-icon-->
-            <div class="user-info-ava pull-right">
-                <i class="icon-user-face"></i>
-                <div>
-                    <span>Гройсман Володимир Борисович</span>
-                    <br>
-                    <span>Голова Верховної Ради України</span>
-                </div>
-            </div><!-- /-profile-icon-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="profile-icon">
+                    <div class="user-info-ava pull-right">
+                        <i class="icon-user-face"></i>
+                        <div>
+                            <span>Гройсман Володимир Борисович</span>
+                            <br>
+                            <span>Голова Верховної Ради України</span>
+                        </div>
+                    </div>
+                </li>
 
-            <!-- time -->
-            <div class="time-block">
-                <div class="clock">
-                    <ul>
-                        <li id="hours"></li>
-                        <li class="point">:</li>
-                        <li id="min"></li>
-                    </ul>
-                </div>
-            </div><!-- /-time -->
+                <li class="clock">
+                    <div class="time-block">
+                        <div class="clock">
+                            <ul>
+                                <li id="hours"></li>
+                                <li class="point">:</li>
+                                <li id="min"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
 
-        </div>
     </nav><!-- /-site-navbar-->
 
     <!--site-menubar-->

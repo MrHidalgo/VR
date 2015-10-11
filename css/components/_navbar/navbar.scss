@@ -143,46 +143,46 @@
       }
     }
 
-    #custom-search-input{
-      position: absolute;
-      top: 0;
-      width: 350px;
-      margin: 9px 10px 9px 100px;
-      @include border(all, #E4E4E4);
-      border-radius: 0.8em;
-      background-color: #fff;
-      font-family: 'Muse_0';
-
-      @include media-def-max($w_xs - 1){
-        display: none;
-      }
+    .navbar-form{
       input{
         color: #ccc;
         border: 0;
+        @include border(top, $c_border-search);
+        @include border(left, $c_border-search);
+        @include border(bottom, $c_border-search);
         box-shadow: none;
+        font: 1.1em 'Muse_1';
       }// /-input
 
-      button{
-        margin: 2px 0 0 0;
-        background: none;
-        box-shadow: none;
-        border: 0;
-        color: #666666;
-        padding: 0 8px 0 10px;
-        outline: 0;
+      .input-group-btn{
+        @include border(top, $c_border-search);
+        @include border(right, $c_border-search);
+        @include border(bottom, $c_border-search);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
 
-        &:hover{
-          border: 0;
+        button{
+          margin: 2px 0 0 0;
+          background: none;
           box-shadow: none;
-        }
-      }// /-button
+          border: 0;
+          color: #666666;
+          padding: 0 8px 0 10px;
+          outline: 0;
 
-      .glyphicon-search{
-        font-size: 20px;
-        color: #ccc;
-      }
-    }// /-custom-search-input
-  }// /-navbar-container
+          &:hover{
+            border: 0;
+            box-shadow: none;
+          }
+
+          .glyphicon-search{
+            font-size: 20px;
+            color: darken(#ccc, 20%);
+          }
+        }// /-button
+      }// /-input-group-btn
+    }// /-navbar-container
+    }// /-navbar-form
 
   .nabar-txt{
     .user-info-ava{
