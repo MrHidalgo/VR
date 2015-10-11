@@ -1,6 +1,6 @@
 <div class="container-fluid voting">
 
-    <div class="row" style="display: none;">
+    <div class="row voting-clock">
 
         <!-- block-timer-low-->
         <div class="block-timer-low">
@@ -21,15 +21,15 @@
         <div class="col-xs-12 foot-btn text-center">
             <!-- btn-foot-group-->
             <div class="btn-foot-group">
-                <div class="btn btn-default btn-voting">
+                <div class="btn btn-default btn-voting-y">
                     <i class="yes"></i>
                     <span class="btn-txt">ЗА</span>
                 </div>
-                <div class="btn btn-default btn-voting">
+                <div class="btn btn-default btn-voting-y">
                     <i class="nt"></i>
                     <span class="btn-txt">УТРИМАВСЯ</span>
                 </div>
-                <div class="btn btn-default btn-voting">
+                <div class="btn btn-default btn-voting-n">
                     <i class="no"></i>
                     <span class="btn-txt">ПРОТИ</span>
                 </div>
@@ -38,7 +38,7 @@
     </div><!-- /-row-->
 
     <!-- result-voting-->
-    <div class="row result-voting-y">
+    <div class="row result-voting-y" style="display: none;">
         <!-- header-res-->
         <div class="header-res">
             <!-- top-block-->
@@ -72,11 +72,58 @@
         <div class="footer-res">
             <p class="text-uppercase">рішення прийнято</p>
         </div><!-- /-footer-res-->
-    </div><!-- /- result-voting-->
+    </div><!-- /- result-voting-y-->
+
+    <!-- result-voting-n-->
+    <div class="row result-voting-n" style="display: none;">
+        <!-- header-res-->
+        <div class="header-res">
+            <!-- top-block-->
+            <div class="top-block">
+                <p>Підсумки голосування №5</p>
+            </div><!-- /-top-block-->
+
+            <!-- bottom-block-->
+            <div class="bottom-block">
+                <div class="watch-result text-uppercase">
+                    <div class="left text-right">
+                        <p>за</p>
+                        <p>утримались</p>
+                        <p>проти</p>
+                        <p>не голосували</p>
+                        <p>всього</p>
+                    </div>
+
+                    <div class="right">
+                        <p>35</p>
+                        <p>5</p>
+                        <p>1</p>
+                        <p>9</p>
+                        <p>50</p>
+                    </div>
+                </div>
+            </div><!-- /-bottom-block-->
+        </div><!--  /-header-res-->
+
+        <!-- footer-res-->
+        <div class="footer-res">
+            <p class="text-uppercase">рішення не прийнято</p>
+        </div><!-- /-footer-res-->
+    </div><!-- /- result-voting-n-->
 </div>
 
 
 <script>
+
+    function showResultY(){
+        $('.voting-clock').hide("fast");
+        $('.result-voting-y').show('slow');
+    };
+    function showResultN(){
+        $('.voting-clock').hide("fast");
+        $('.result-voting-n').show('slow');
+    };
+
 
     $('#countdown2').ClassyCountdown({
         end: $.now() + 60,
@@ -101,7 +148,7 @@
 
         },
         onEndCallback: function() {
-//            alert("Time out!");
+            showResultY();
         }
     });
 
@@ -115,6 +162,18 @@
         $(this).find('.btn-txt').css(
                 'color' , '#fff'
         );
+    });
+
+    /*
+     *============================================
+     * SHOW RESULT
+     *============================================
+     */
+    $('.btn-voting-y').click(function(){
+        showResultY();
+    });
+    $('.btn-voting-n').click(function(){
+        showResultN();
     });
 
 </script>

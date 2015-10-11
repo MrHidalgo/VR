@@ -171,8 +171,9 @@
     }
   }// /-foot-btn
 
-  .result-voting-y{
-
+  .result-voting-y,
+  .result-voting-nt,
+  .result-voting-n{
     .header-res{
       position: absolute;
       width: $w_all;
@@ -277,5 +278,11 @@
       }
     }// /-footer-res
   }// /-result-voting
+
+  .result-voting-n{
+    .footer-res{
+      background-color: $c_red;
+    }
+  }// /-result-voting-n
 }// /-VOTING
 

@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //auto load order
     $.ajax({
-        url: "content/index-voting.html",
+        url: "content/index-order.html",
         cache: false,
         success: function(html){
             $("#content-page").html(html);
