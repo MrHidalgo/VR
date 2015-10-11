@@ -1,0 +1,230 @@
+@import "../../_mixin/mixin";
+
+.users{
+  >.row{
+    &:first-child {
+      background-color: #e6e9ee;
+    }
+
+    .header-users{
+      width: $w_all;
+      height: auto;
+
+      .list-group-horizontal{
+        margin-bottom: 0;
+        padding: 10px 0;
+
+        .list-group-item {
+          display: inline-block;
+          margin-bottom: 0;
+          margin-left:-4px;
+          margin-right: 0;
+
+          &:first-child{
+            border-top-right-radius:0;
+            border-bottom-left-radius:4px;
+          }
+          &:last-child{
+            border-top-right-radius:4px;
+            border-bottom-left-radius:0;
+          }
+        }// /-list-group-item
+
+        >a.list-group-item.active{
+          background-color: $c_lightblue;
+        }// /list-group-item.active
+
+        >a.list-group-item{
+          background-color: $c_time;
+          font-family: 'Muse_1';
+          color: $c_white;
+        }// /-list-group-item
+      }// /-.list-group-horizontal
+
+      .left-btn{
+        .list-group-item{
+          width: 100px;
+        }// /-list-group-item
+      }// /-left-btn
+
+      .right-btn{
+        .list-group-item{
+          width: 150px;
+
+          .glyphicon{
+            margin-left: 10px;
+          }
+        }// /-list-group-item
+      }// /-left-btn
+    }// /-header-users
+  }// /-row
+
+  .wrapper{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 62px);
+    max-height: calc(100% - 62px);
+
+      [class^='wrap-users-'] {
+        height: 100%;
+        padding: 0;
+
+        >.row{
+          margin-left: 0;
+          margin-right: 0;
+
+          >div{
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }// /-wrap-users-
+
+
+      .grid-divider {
+        position: relative;
+        height: 25%;
+        padding: 0;
+        border-bottom: 1px solid $c_time;
+
+        .col-sm-6{
+          height: $w_all;
+
+          .icon-users{
+            height: $w_all;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+
+            .icon{
+              display: inline-block;
+              width: 85px;
+              height: 85px;
+
+              background: url("../../../../image/screenprofile/Dr-house.jpg");
+              background-size: cover;
+              border-radius: 50%;
+            }// /-icon
+
+
+            .real-there,
+            .real-miss{
+              padding-top: 15px;
+              color: $c_there;
+              font: 1em 'Muse_1';
+
+              span.glyphicon.glyphicon-ok {
+                padding: 4px;
+                background-color: $c_there;
+                border-radius: 50%;
+                color: #fff;
+              }
+            }// /-real
+
+            .real-miss{
+              color: $c_miss;
+
+              span.glyphicon.glyphicon-minus{
+                padding: 4px;
+                background-color: $c_miss;
+                border-radius: 50%;
+                color: #fff;
+              }
+            }
+          }// /-icon-users
+
+          .col-xs-8{
+            height: $w_all;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+
+            font-family: 'Muse_1';
+            color: darken($c_time, 25%);
+
+            button.btn.btn-default {
+              width: 100px;
+              color: $c_white;
+              background-color: $c_time;
+              outline: 0;
+            }
+          }// /-col-xs-8
+        }// /-col-sm-6
+
+        >[class*='col-'] {
+          position: static;
+
+          &:before {
+            content: "";
+            border-left: 5px solid $c_time;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+          }
+        }
+      }// /-grid-divider
+  }// /-wrapper
+
+  .wrapper-more{
+    font-family: 'Muse_0';
+
+    >div.header-user-more {
+      position: relative;
+      z-index: 1;
+      height: $h_nav - 6px;
+      background-color: $c_wrap;
+      @include border(bottom, $c_border);
+      line-height: 4;
+
+      >a.btn-more-back{
+        margin-left: 5%;
+        background-color: $c_lightblue;
+        color: $c_white;
+        font-family: 'Muse_1';
+      }
+    } // /-head-btn
+
+    .more-wrap{
+      position: absolute;
+      padding: 0;
+      margin-top: 60px;
+      height: calc(100% - 60px);
+      overflow: auto;
+
+      >.col-sm-12{
+        padding: 15px;
+        @include border(bottom, $c_border);
+      }
+
+      .header-info{
+        @include border(bottom, $c_border);
+
+        >.row{
+          margin: 0;
+
+          .col-sm-4{
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            padding: 2.5%;
+
+            .icon{
+              display: inline-block;
+              width: 140px;
+              height: 140px;
+
+              background: url("../../../../image/screenprofile/Dr-house.jpg");
+              background-size: cover;
+              border-radius: 50%;
+            }
+          }// /-col-sm-4
+        }// /-row
+      }// /-header-info
+    }// /-more-wrap
+  }// /-wrapper-more
+}// /-users
